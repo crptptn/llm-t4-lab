@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.egg-info/
+.venv/
+
+# артефакты прогонов: веса адаптеров, кэш выдачи RAG, логи сервера
+cache/
+logs/
+outputs/

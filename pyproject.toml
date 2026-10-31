@@ -1,0 +1,18 @@
+[project]
+name = "llm-t4-lab"
+version = "0.1.0"
+description = "LLM на Kaggle 2× T4: бенчмарк vLLM, квантизация, QLoRA, RAG, function calling"
+requires-python = ">=3.10"
+readme = "README.md"
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["B905"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
